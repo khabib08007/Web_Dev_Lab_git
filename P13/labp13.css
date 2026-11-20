@@ -11,30 +11,27 @@ body {
     flex-direction: column;
 }
 
-/* Flexbox Navbar */
-
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 20px 40px;
-    background-color: #222;
+    background: #222;
     color: white;
 }
 
-.navbar nav {
+.navbar nav, .footer div {
     display: flex;
     gap: 20px;
 }
 
-.navbar a {
+.navbar a, .footer a {
     color: white;
     text-decoration: none;
 }
 
 /* Main */
-
 main {
     flex: 1;
 }
@@ -42,15 +39,14 @@ main {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-color: #e2e8f0;
+    background: #e2e8f0;
 }
 
 .hero h1 {
     margin-bottom: 15px;
 }
 
-/* CSS Grid Projects */
-
+/* Projects */
 .projects {
     padding: 40px;
 }
@@ -62,15 +58,13 @@ main {
 
 .project-grid {
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 20px;
 }
 
 .card {
     padding: 30px;
-    background-color: #f1f5f9;
+    background: #f1f5f9;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
@@ -79,33 +73,19 @@ main {
     margin-bottom: 10px;
 }
 
-/* Flexbox Footer */
-
+/* Footer */
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background-color: #222;
+    background: #222;
     color: white;
     padding: 25px 40px;
 }
 
-.footer div {
-    display: flex;
-    gap: 20px;
-}
-
-.footer a {
-    color: white;
-    text-decoration: none;
-}
-
 /* Responsive */
-
 @media (max-width: 600px) {
-
-    .navbar {
+    .navbar, .footer {
         flex-direction: column;
         gap: 20px;
     }
@@ -117,10 +97,5 @@ main {
 
     .project-grid {
         grid-template-columns: 1fr;
-    }
-
-    .footer {
-        flex-direction: column;
-        gap: 20px;
     }
 }
